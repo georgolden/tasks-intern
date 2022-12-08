@@ -13,7 +13,9 @@
  */
 function printTime(hour, minute) {
   const qualifier = printMinute(minute);
-  const endonym = qualifier === 'quarter to'  || minute >= 53 && minute <= 59 ?  printHour(hour + 1) : printHour(hour);
+  const endonym = qualifier === 'quarter to' 
+    || minute >= 53 && minute <= 59 ? 
+    printHour(hour + 1) : printHour(hour);
   let result;
 
   if (qualifier === 'o\'clock') {
